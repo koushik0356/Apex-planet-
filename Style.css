@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #ffe;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel img {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  background: rgba(0,0,0,0.4);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#prev-btn { left: 10px; }
+#next-btn { right: 10px; }
+.carousel button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+#options button {
+  display: block;
+  margin: 8px auto;
+  padding: 10px 20px;
+  background: #00a8ff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  width: 70%;
+}
+#options button:hover {
+  background: #0097e6;
+  transform: scale(1.05);
+}
+
+.btn {
+  margin-top: 10px;
+  background: #4cd137;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #44bd32;
+  transform: scale(1.05);
+}
+
+.result-box {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .btn, #options button {
+    width: 90%;
+  }
+}
