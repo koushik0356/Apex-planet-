@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌐 Advanced Styling & JavaScript</h1>
+    <p>Interactive, Responsive & Dynamic Web Experience</p>
+  </header>
+
+  <main>
+    <!-- Carousel Section -->
+    <section class="card">
+      <h2>🖼️ Image Carousel</h2>
+      <div class="carousel">
+        <button id="prev-btn">⏪</button>
+        <img id="carousel-image" src="https://picsum.photos/id/237/600/300" alt="carousel">
+        <button id="next-btn">⏩</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="card">
+      <h2>🧠 Quick Quiz</h2>
+      <div id="quiz-container">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button id="next-question" class="btn">Next Question</button>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section class="card">
+      <h2>🌦️ Real-Time Weather Data</h2>
+      <p>Click below to fetch current weather data (via API)</p>
+      <button id="fetchWeather" class="btn">Fetch Weather</button>
+      <div id="weatherResult" class="result-box"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by <strong>Apex Planet</strong> | © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
